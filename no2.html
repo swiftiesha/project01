@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #heart{
+            position: relative;
+            width: 200px;
+            height:200px;
+            top: 250px;
+            left: 390px;
+            
+
+        }
+        #heart:before,#heart:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 52px;
+            height: 80px;
+            border-radius: 50px 50px 0 0;
+            background:palegreen;
+          
+            
+        }  
+        #heart::before {
+            left: 50px;
+             transform: rotate(-45deg);
+            transform-origin: 0 100%;
+
+        }
+
+        #heart::after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+            
+        }  
+        p{
+            color: peru;
+            font-size: larger;
+            text-indent: 20px;
+            margin-top: auto;
+            top: 150px;
+            left: 300px;
+            position: relative;
+            
+
+        }
+        .button {
+            position: relative;
+            top: 150px;
+            left: 400px;
+            padding: 0.5rem;
+            margin: 0.5rem;
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="heart"></div>
+        <P>adeyyyy ena kolupaaa!!</P>
+    <button class="button is-normal is-responsive">
+            <a href="./plain.html">BACK</a>
+          </button>
+    
+    
+</body>
+</html>

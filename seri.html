@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #heart{
+            position: relative;
+            width: 200px;
+            height:200px;
+            top: 250px;
+            left: 390px;
+            
+
+        }
+        #heart:before,#heart:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 52px;
+            height: 80px;
+            border-radius: 50px 50px 0 0;
+            background:white;
+          
+            
+        }  
+        #heart::before {
+            left: 50px;
+             transform: rotate(-45deg);
+            transform-origin: 0 100%;
+
+        }
+
+        #heart::after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+            
+        }  
+        p{
+            color: peru;
+            font-size: larger;
+            text-indent: 20px;
+            margin-top: auto;
+            top: 150px;
+            left: 370px;
+            position: relative;
+
+        }
+        .button {
+            position: relative;
+            top: 150px;
+            left: 500px;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            background-color: lavender;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div id="heart"></div>
+    <p>GOMMA!!pidichu tha aganum vera valli ilaaa*</p>
+    <button class="button is-normal is-responsive">
+        <a href="./plain.html">OKAY</a>
+    </button>
+    
+    </button>
+</body>
+</html>
